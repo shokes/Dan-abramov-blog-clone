@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { BsSun } from 'react-icons/bs';
+import { MdModeNight } from 'react-icons/md';
 
 const Navigation = function () {
   const [theme, setTheme] = useState('dark-theme');
@@ -18,8 +20,8 @@ const Navigation = function () {
     <nav>
       <div className='nav-flex'>
         <h1 className='site-title'>Overreacted</h1>
-        <h3 className='btn' onClick={togglehandler}>
-          Toggle
+        <h3 className='toggle-btn' onClick={togglehandler}>
+          {theme === 'dark-theme' ? <BsSun /> : <MdModeNight />}
         </h3>
       </div>
       <div className='description'>
