@@ -1,13 +1,12 @@
 import moment from 'moment';
-import { Zoom } from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 
 const Article = function ({ title, date, length, snippet }) {
   const formattedDate = moment(date).format('MMMM Do, YYYY');
   return (
-    <Zoom triggerOnce>
+    <Slide direction='up' triggerOnce>
       <main className='article'>
         <div>
-          {/* <h2>{title}</h2> */}
           <a className='article-heading' href='#'>
             {title}
           </a>
@@ -19,7 +18,7 @@ const Article = function ({ title, date, length, snippet }) {
           <p className='para'>{snippet}</p>
         </div>
       </main>
-    </Zoom>
+    </Slide>
   );
 };
 

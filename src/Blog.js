@@ -4,6 +4,7 @@ import articles from './data';
 import Navigation from './Navigation';
 import Article from './Article';
 import Footer from './Footer';
+
 const Blog = function () {
   return (
     <main className='container'>
