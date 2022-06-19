@@ -140,11 +140,11 @@ img {
 
 /* BELOW 592px  */
 @media (max-width: 37em) {
-  html {
+  /* html {
     font-size: 65%;
-  }
+  } */
 
   .container {
-    max-width: 35rem;
+    max-width: 90%;
   }
 }
